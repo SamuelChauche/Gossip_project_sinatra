@@ -3,3 +3,8 @@ ruby '3.3.6'
 gem 'pry'
 gem 'rspec'
 gem 'dotenv'
+gem 'sinatra'
+gem 'puma'
+gem 'rerun'
+gem 'csv'
+gem "rackup", "~> 2.2"

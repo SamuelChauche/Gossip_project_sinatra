@@ -1,0 +1,16 @@
+<html>
+  <head>
+    <title>Éditer un potin</title>
+  </head>
+  <body>
+    <h1>Éditer le potin n°<%= params[:id] %></h1>
+    <form action="/gossips/<%= params[:id] %>/edit/" method="POST">
+      <label for="gossip_author">Auteur :</label>
+      <input type="text" name="gossip_author" value="<%= @gossip.author %>"><br>
+      <label for="gossip_content">Contenu :</label>
+      <input type="text" name="gossip_content" value="<%= @gossip.content %>"><br>
+      <input type="submit" value="Mettre à jour">
+    </form>
+    <a href="/gossips/<%= params[:id] %>/">Retour au potin</a>
+  </body>
+</html>
